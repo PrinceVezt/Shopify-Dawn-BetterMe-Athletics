@@ -1,0 +1,66 @@
+# ===================================================================
+# Shopify Theme Files - DO NOT COMMIT
+# ===================================================================
+# Theme editor settings (unique per store)
+config/settings_data.json
+
+# Shopify CLI cache/config (local only)
+.shopify/
+
+# Shopify CLI 2.x / 3.x configs (optional - ignore if present)
+shopify.theme.toml
+shopify.theme.lock
+config.yml
+config.json
+
+# Environment variables (API keys, tokens, etc.)
+.env
+
+# ===================================================================
+# Dependencies - MUST BE IGNORED
+# ===================================================================
+# Node modules (thousands of files, rebuilt via `npm install`)
+node_modules/
+
+# Lock files (optional: keep only if you want reproducible builds)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===================================================================
+# Build / Distribution Output
+# ===================================================================
+# Compiled / bundled assets
+dist/
+build/
+public/
+
+# ===================================================================
+# OS & Editor Specific Files
+# ===================================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+
+# ===================================================================
+# Logs & Debug
+# ===================================================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Folders to ignore
+z_Archived_Files/

@@ -1,0 +1,50 @@
+{% if product.metafields.custom.is_supplement.value %}
+  <section class="product-supplement-info page-width">
+    
+    {% if product.metafields.custom.highlights.value != blank %}
+      <div class="supplement-highlights">
+        <ul>
+          {% for item in product.metafields.custom.highlights.value %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if product.metafields.custom.ingredients.value != blank %}
+      <div class="supplement-block">
+        <h2>Ingredients</h2>
+        <p>{{ product.metafields.custom.ingredients.value | newline_to_br }}</p>
+      </div>
+    {% endif %}
+
+    {% if product.metafields.custom.supplement_facts.value != blank %}
+      <div class="supplement-block supplement-facts">
+        <h2>Supplement Facts</h2>
+        {{ product.metafields.custom.supplement_facts.value }}
+      </div>
+    {% endif %}
+
+    {% if product.metafields.custom.usage_instructions.value != blank %}
+      <div class="supplement-block">
+        <h2>How to Use</h2>
+        <p>{{ product.metafields.custom.usage_instructions.value | newline_to_br }}</p>
+      </div>
+    {% endif %}
+
+    {% if product.metafields.custom.warnings.value != blank %}
+      <div class="supplement-block warning">
+        <h2>Warnings</h2>
+        <p>{{ product.metafields.custom.warnings.value | newline_to_br }}</p>
+      </div>
+    {% endif %}
+
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product – Supplement Info",
+  "settings": []
+}
+{% endschema %}
