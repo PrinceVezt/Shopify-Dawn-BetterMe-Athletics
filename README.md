@@ -6,7 +6,7 @@
     - to customize the Dawn theme
     - to showcase skills that can be use on Portfolio.
 
-## Tech Stack
+Tech Stack
 - HTML
 - CSS
 - JS
